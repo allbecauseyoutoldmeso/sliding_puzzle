@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, fireEvent } from '@testing-library/react'
+import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('renders button', () => {
+  const { queryByText, getByText } = render(<App />)
+
+  expect(queryByText('yay')).toBeFalsy()
+
+  const button = getByText('I am happy')
+  fireEvent.click(button)
+
+  expect(queryByText('yay')).toBeTruthy()
+})
