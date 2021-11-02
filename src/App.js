@@ -2,7 +2,7 @@ import Grid from './Grid'
 
 const App = () => {
   return(
-    <Grid size={3} />
+    <Grid size={5} />
   )
 }
 

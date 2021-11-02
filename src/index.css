@@ -1,32 +1,49 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Mali', cursive;
+  color: #E94E77;
+}
+
 .grid {
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 20px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   width: fit-content;
-  border-top: solid 1px black;
+  border-top: solid 1px #C6A49A;
 }
 
 .row:first-child {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #C6A49A;
 }
 
 .cell {
   width: 50px;
   height: 50px;
-  border-right: solid 1px black;
+  border-right: solid 1px #C6A49A;
+  background-color: #F4EAD5;
 }
 
 .cell:first-child {
-  border-left: solid 1px black;
+  border-left: solid 1px #C6A49A;
 }
 
 .tile {
-  background-color: red;
-  height: 40px;
-  width: 40px;
-  margin: 5px;
+  background-color: #C6E5D9;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  color: #E94E77;
+  background-color: #C6E5D9;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
 }
