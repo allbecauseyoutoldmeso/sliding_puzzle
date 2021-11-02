@@ -1,17 +1,8 @@
-import { useState } from 'react'
+import Grid from './Grid'
 
 const App = () => {
-  const [happy, setHappy] = useState(false);
-
-  const toggleHappy = () => {
-    setHappy(!happy)
-  }
-
   return(
-    <>
-      <button onClick={toggleHappy}>I am happy</button>
-      <div>{happy ? 'yay' : 'boo'}</div>
-    </>
+    <Grid size={5} />
   )
 }
 
