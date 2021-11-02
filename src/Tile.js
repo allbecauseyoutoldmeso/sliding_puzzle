@@ -1,8 +1,9 @@
 import { React } from 'react'
 
-const Tile = () => {
+const Tile = ({ x, y }) => {
   return(
     <div className='tile'>
+      {`${x}, ${y}`}
     </div>
   )
 }

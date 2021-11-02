@@ -1,10 +1,10 @@
-class TileUpdater {
+class TileMover {
   constructor(cells, clickedCell) {
     this.cells = cells
     this.clickedCell = clickedCell
   }
 
-  updateCells() {
+  moveTile() {
     const emptyNeighbour = this.emptyNeighbour()
 
     if (!!emptyNeighbour) {
@@ -18,12 +18,14 @@ class TileUpdater {
   }
 
   neighbours() {
-    return this.cells.filter((cell) => (
-      !(this.clickedCell === cell) &&
-      [cell.position.x - 1, cell.position.x, cell.position.x + 1].includes(this.clickedCell.position.x) &&
-      [cell.position.y - 1, cell.position.y, cell.position.y + 1].includes(this.clickedCell.position.y)
-    ))
+    return this.cells.filter((cell) => {
+      const a = this.clickedCell.position
+      const b = cell.position
+
+      return (a.x === b.x && [b.y + 1, b.y - 1].includes(a.y)) ||
+        (a.y === b.y && [b.x + 1, b.x - 1].includes(a.x))
+    })
   }
 }
 
-export default TileUpdater
+export default TileMover

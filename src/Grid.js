@@ -1,31 +1,41 @@
 import { React, useState } from 'react'
 import Cell from './Cell'
 import CellGenerator from './CellGenerator'
-import TileUpdater from './TileUpdater'
+import TileMover from './TileMover'
+import TileScramber from './TileScramber'
 
 const Grid = ({ size }) => {
   const [cells, setCells] = useState(new CellGenerator(size).cells)
 
-  const updateCells = (clickedCell) => {
-    const tileUpdater = new TileUpdater(cells, clickedCell)
-    tileUpdater.updateCells()
-    setCells([...tileUpdater.cells ])
+  const moveTile = (clickedCell) => {
+    const tileMover = new TileMover(cells, clickedCell)
+    tileMover.moveTile()
+    setCells([...tileMover.cells ])
+  }
+
+  const scrambleTiles = () => {
+    const tileScrambler = new TileScramber(cells)
+    tileScrambler.scrambleTiles()
+    setCells([...tileScrambler.cells ])
   }
 
   return(
-    <div className='grid'>
-      {[...Array(size)].map((_e, i) => {
-        return(
-           <div className='row'>
-            {
-              cells.filter((cell) => (cell.position.x === i)).map((cell) => {
-                return <Cell data={cell} handleClick={updateCells}/>
-              })
-            }
-           </div>
-        )
-      })}
-    </div>
+    <>
+      <div className='grid'>
+        {[...Array(size)].map((_e, i) => {
+          return(
+             <div className='row'>
+              {
+                cells.filter((cell) => (cell.position.x === i)).map((cell) => {
+                  return <Cell data={cell} handleClick={moveTile}/>
+                })
+              }
+             </div>
+          )
+        })}
+      </div>
+      <button onClick={scrambleTiles}>Scramble Tiles</button>
+    </>
   )
 }
 
