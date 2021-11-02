@@ -1,10 +1,17 @@
 import { React } from 'react'
 import Tile from './Tile'
 
-const Cell = ({ data, handleClick }) => {
+const Cell = ({ data, handleClick, size }) => {
+  const style = () => (
+    {
+      width: '50px',
+      height: '50px'
+    }
+  )
+
   return(
-    <div className='cell' onClick={() => handleClick(data)}>
-      {!!data.tile && <Tile {...data.tile} />}
+    <div style={style()} className='cell' onClick={() => handleClick(data)}>
+      {!!data.tile && <Tile {...data.tile} size={size} />}
     </div>
   )
 }

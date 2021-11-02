@@ -24,8 +24,6 @@ main {
 }
 
 .cell {
-  width: 50px;
-  height: 50px;
   border-right: solid 1px #C6A49A;
   background-color: #F4EAD5;
 }

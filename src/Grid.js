@@ -27,7 +27,7 @@ const Grid = ({ size }) => {
              <div className='row'>
               {
                 cells.filter((cell) => (cell.position.x === i)).map((cell) => {
-                  return <Cell data={cell} handleClick={moveTile}/>
+                  return <Cell data={cell} handleClick={moveTile} size={size}/>
                 })
               }
              </div>
