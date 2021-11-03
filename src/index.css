@@ -43,7 +43,6 @@ button {
   border: solid 1px #C6A49A;
   border-radius: 3px;
   font-family: inherit;
-  margin-bottom: 20px;
 }
 
 select {
@@ -52,6 +51,7 @@ select {
   background-color: #C6E5D9;
   border: solid 1px #C6A49A;
   border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 label {
