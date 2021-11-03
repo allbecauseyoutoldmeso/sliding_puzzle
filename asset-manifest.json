@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/allbecauseyoutoldmeso/sliding_puzzle/static/css/main.a50d2b50.chunk.css",
+    "main.js": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/main.8ec70a6d.chunk.js",
+    "main.js.map": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/main.8ec70a6d.chunk.js.map",
+    "runtime-main.js": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/runtime-main.4ffb284a.js",
+    "runtime-main.js.map": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/runtime-main.4ffb284a.js.map",
+    "static/js/2.06c2c5db.chunk.js": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/2.06c2c5db.chunk.js",
+    "static/js/2.06c2c5db.chunk.js.map": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/2.06c2c5db.chunk.js.map",
+    "index.html": "/allbecauseyoutoldmeso/sliding_puzzle/index.html",
+    "static/css/main.a50d2b50.chunk.css.map": "/allbecauseyoutoldmeso/sliding_puzzle/static/css/main.a50d2b50.chunk.css.map",
+    "static/js/2.06c2c5db.chunk.js.LICENSE.txt": "/allbecauseyoutoldmeso/sliding_puzzle/static/js/2.06c2c5db.chunk.js.LICENSE.txt",
+    "static/media/kitten.2882cbdb.jpeg": "/allbecauseyoutoldmeso/sliding_puzzle/static/media/kitten.2882cbdb.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ffb284a.js",
+    "static/js/2.06c2c5db.chunk.js",
+    "static/css/main.a50d2b50.chunk.css",
+    "static/js/main.8ec70a6d.chunk.js"
+  ]
+}
