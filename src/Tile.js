@@ -1,4 +1,3 @@
-import { React } from 'react'
 import Background from './kitten.jpeg'
 
 const Tile = ({ x, y, size }) => {

@@ -40,7 +40,20 @@ main {
 button {
   color: #E94E77;
   background-color: #C6E5D9;
-  border: none;
+  border: solid 1px #C6A49A;
   border-radius: 3px;
   font-family: inherit;
+  margin-bottom: 20px;
+}
+
+select {
+  font-family: inherit;
+  color: #E94E77;
+  background-color: #C6E5D9;
+  border: solid 1px #C6A49A;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 5px;
 }

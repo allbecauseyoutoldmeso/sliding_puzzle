@@ -1,11 +1,9 @@
-import { React, useState } from 'react'
 import Cell from './Cell'
-import CellGenerator from './CellGenerator'
 import TileMover from './TileMover'
 import TileScramber from './TileScramber'
 
-const Grid = ({ size }) => {
-  const [cells, setCells] = useState(new CellGenerator(size).cells)
+const Grid = ({ size, cells, setCells }) => {
+
 
   const moveTile = (clickedCell) => {
     const tileMover = new TileMover(cells, clickedCell)
